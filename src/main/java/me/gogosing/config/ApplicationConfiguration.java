@@ -1,11 +1,13 @@
 package me.gogosing.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by JinBum Jeong on 2020/02/22.
  */
+@RefreshScope
 @Configuration
 @ConfigurationProperties(prefix = "application")
 public class ApplicationConfiguration {
